@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import "ng-zorro-antd/ng-zorro-antd.min.css";
+@config "../tailwind.config";
+@import "tailwindcss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+:root {
+  --app-text: #333333;
+  --app-font: "Sarabun", sans-serif;
+}
+
+body {
+  color: var(--app-text);
+  font-family: var(--app-font);
+}
+
+.ant-typography {
+  color: inherit;
+}
+.ant-typography :where(h1, h2, h3, h4, h5, h6, p, span, div) {
+  color: inherit;
+  margin: 0;
+  line-height: inherit;
+  font-weight: inherit;
+}
+.ant-form,
+.ant-form-item-label > label,
+.ant-table,
+.ant-table td,
+.ant-table th,
+.ant-breadcrumb,
+.ant-descriptions,
+.ant-list,
+.ant-modal,
+.ant-drawer {
+  color: inherit;
+}
+
+.ant-table-thead tr th:not(:last-child)::before {
+  display: none;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
